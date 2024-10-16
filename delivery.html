@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amar KFC</title>
+    <!-- tailwind css daisy ui  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary-color': '#e4002b',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+
+<body class="m-0">
+    <header>
+        <!-- first nav section  -->
+        <div class="navbar bg-base-100 max-w-[1050px] mx-auto">
+            <div class="navbar-start">
+                <a href="index.html" class="text-xl">
+                    <img class="max-h-14" src="images/logo_kfc.png" alt="">
+                </a>
+            </div>
+            <div class="navbar-end pt-2">
+                <a href="#" class="font-semibold text-base">SING IN</a>
+            </div>
+        </div>
+        <!-- second nav section  -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li>
+                    <a href="">
+                        <h3>Delivery</h3>
+                    </a>
+                  </li>
+                
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl">daisyUI</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Item 1</a></li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn">Button</a>
+            </div>
+          </div>
+
+    </header>
+    <!-- Sign in section  -->
+    <main>
+        
+    </main>
+
+
+    <footer class="footer text-base-content rounded mt-14 ">
+        <div class="max-w-[1050px] mx-auto">
+            <nav class="flex flex-col lg:flex-row gap-8 no-underline mx-auto">
+                <a href="#" class=" no-underline uppercase text-[#101820] font-medium text-xs">About KFC</a>
+                <a href="#" class="no-underline uppercase text-[#101820] font-medium text-xs">Facebook</a>
+                <a href="#" class="no-underline uppercase text-[#101820] font-medium text-xs">Contact us</a>
+                <a href="#" class="no-underline uppercase text-[#101820] font-medium text-xs">Brand T $ C</a>
+                <a href="#" class="no-underline uppercase text-[#101820] font-medium text-xs">FAQ</a>
+                <a href="#" class="no-underline uppercase text-[#101820] font-medium text-xs">Offers T & C</a>
+                <a href="#" class="no-underline uppercase text-[#101820] font-medium text-xs">Find a Kfc</a>
+                <a href="#" class="no-underline uppercase text-[#101820] font-medium text-xs">KFC Shopner Pathshala</a>
+            </nav>
+
+            <div class="grid grid-cols-3 gap-10 my-10">
+                <div class="grid grid-cols-6 gap-3 text-start items-start justify-start text-2xl">
+                    <a href=""><i class="fa-brands fa-square-facebook text-[#007bff]"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram text-red-500"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube text-red-600"></i></a>
+                </div>
+                <div class="flex gap-2">
+                    <h2 class="text-sm">Developed By |</h2>
+                    <img class="w-1/2" src="images/footer logo-black.png" alt="">
+                </div>
+                <div class="text-end">
+                    <p class="text-xs text-[#525151]">© Copyright 2024 KFC. All Rights Reserved.</p>
+                </div>
+            </div>
+            <div class="text-center mx-auto text-xs text-[#666]">
+                <p>Food shown are for illustration purpose only. Actual product may differ from the images shown in this
+                    website. <br>
+                    The KFC name, logos, and related marks are trademarks of KFC, Inc.</p>
+            </div>
+            <div class="flex items-center justify-center mx-auto gap-10 -mb-16 mt-8">
+                <div class="bg-primary-color w-10 h-7"></div>
+                <div class="bg-primary-color w-10 h-7"></div>
+                <div class="bg-primary-color w-10 h-7"></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
