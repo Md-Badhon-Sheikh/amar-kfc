@@ -8,6 +8,7 @@
     <!-- tailwind css daisy ui  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -40,16 +41,39 @@
                     <img class="z-20" src="images/lates start.jpg" alt="Shoes" />
                 </figure>
                 <div class="card-body">
-                    <h2 class="mt-9 uppercase text-4xl font-semibold text-center">Let's Start Ordering</h2>
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                    <h2 class="mt-9 uppercase text-3xl font-semibold text-center">Let's Start Ordering</h2>
+                    <div class=" grid grid-cols-1 lg:grid-cols-3 mt-6 justify-center ml-36">
+                        <a href="#">
+                            <button
+                                class="bg-red-600 text-white border-none px-20 py-2 rounded drop-shadow-2xl">DELIVERY</button>
+                        </a>
+                        <a href="#">
+                            <button
+                                class="bg-red-600 text-white border-none px-20 py-2 rounded uppercase drop-shadow-2xl">Takeaway
+                            </button>
+                        </a>
+                        <a class="mr-12" href="#">
+                            <button class="bg-red-600 text-white border-none px-20 py-2 rounded uppercase">Dine-in
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
     </header>
     <main>
+        <!-- Featured Product  -->
+        <section class="max-w-[1100px] mx-auto my-6">
+            <div class="grid grid-cols-3 justify-center items-center">
+                <hr>
+                <h2 id="title" class="uppercase text-2xl font-bold text-center ">Featured Product</h2>
+                <hr>
+            </div>
+            <div>
+                <img src="images/featured prodct 01.jpg" alt="">
+            </div>
 
+        </section>
     </main>
     <footer>
 
