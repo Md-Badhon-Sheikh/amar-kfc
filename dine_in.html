@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amar KFC</title>
+  <!-- tailwind css daisy ui  -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'primary-color': '#e4002b',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="m-0">
+  <header>
+    <!-- nav section  -->
+    <section class="">
+      <!-- first nav section  -->
+      <div class="navbar bg-base-100 max-w-[1050px] mx-auto">
+        <div class="navbar-start">
+          <a href="index.html" class="text-xl">
+            <img class="max-h-14" src="images/logo_kfc.png" alt="">
+          </a>
+        </div>
+        <div class="navbar-end pt-2">
+          <a href="sign-in.html" class="font-semibold text-base">SING IN</a>
+        </div>
+      </div>
+      <!-- second nav section  -->
+      <div class="navbar bg-black">
+        <div class=" text-white">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0"
+              class="menu menu-sm text-white dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 ">
+              <li>
+                <a href="delivery.html">
+                  <input type="radio" name="radio-1" class="radio radio-secondary w-4 h-4 mr-2" checked="checked" />
+                  <i class="fa-solid fa-truck-fast text-3xl text-[#8a8989]"></i>
+                  <span class="text-base font-semibold">Delivery</span>
+                </a>
+              </li>
+              <li>
+                <a href="takeaway.html">
+                  <input type="radio" name="radio-1" class="radio radio-secondary w-4 h-4 mr-2" />
+                  <i class="fa-solid fa-blender text-3xl text-[#8a8989]"></i>
+                  <span class="text-base font-semibold">Takeaway</span>
+                </a>
+              </li>
+              <li>
+                <a href="dine_in.html">
+                  <input type="radio" name="radio-1" class="radio radio-secondary w-4 h-4 mr-2" />
+                  <i class="fa-solid fa-utensils text-3xl text-[#8a8989]"></i>
+                  <span class="text-base font-semibold">Dine-In</span>
+                </a>
+              </li>
+              <li>
+                <span class="text-lg mr-8">|</span>
+              </li>
+
+              <li>
+                <a href="">
+                  <span class="mt-2 font-semibold">Delivery to : Select Locatio</span>
+                </a>
+              </li>
+              <li>
+                <a href="" class="border-2 py-1 px-3 font-semibold mt-2">Change location</a>
+              </li>
+              <li class="ml-4">
+                <a href="">
+                  <i class="fa-solid fa-cart-plus text-3xl text-[#8a8989]"></i>
+                  <span class="text-lg font-semibold">BTD 0</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-center flex items-center justify-center max-w-[1050px]  mx-auto">
+          <ul class="menu menu-horizontal text-white ">
+            <li>
+              <a href="delivery.html">
+                <input type="radio" name="radio-1" class="radio radio-secondary w-4 h-4 mr-2" checked="checked" />
+                <i class="fa-solid fa-truck-fast text-3xl text-[#8a8989]"></i>
+                <span class="text-base font-semibold">Delivery</span>
+              </a>
+            </li>
+            <li>
+              <a href="takeaway.html">
+                <input type="radio" name="radio-1" class="radio radio-secondary w-4 h-4 mr-2" />
+                <i class="fa-solid fa-blender text-3xl text-[#8a8989]"></i>
+                <span class="text-base font-semibold">Takeaway</span>
+              </a>
+            </li>
+            <li>
+              <a href="dine_in.html">
+                <input type="radio" name="radio-1" class="radio radio-secondary w-4 h-4 mr-2" />
+                <i class="fa-solid fa-utensils text-3xl text-[#8a8989]"></i>
+                <span class="text-base font-semibold">Dine-In</span>
+              </a>
+            </li>
+            <li>
+              <span class="text-lg mr-8">|</span>
+            </li>
+
+            <li>
+              <a href="">
+                <span class="mt-2 font-semibold">Delivery to : Select Locatio</span>
+              </a>
+            </li>
+            <li>
+              <a href="" class="border-2 py-1 px-3 font-semibold mt-2">Change location</a>
+            </li>
+            <li class="ml-4">
+              <a href="">
+                <i class="fa-solid fa-cart-plus text-3xl text-[#8a8989]"></i>
+                <span class="text-lg font-semibold">BTD 0</span>
+              </a>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- carousel section  -->
+    <section>
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="images/carousel 01.jpg" class="w-full" />
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide4" class="text-2xl text-white ml-10 font-extrabold">❮</a>
+            <a href="#slide2" class="text-2xl text-white mr-10 font-extrabold">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="images/carousel 02.jpg" class="w-full" />
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide1" class="text-2xl text-white ml-10 font-extrabold">❮</a>
+            <a href="#slide3" class="text-2xl text-white mr-10 font-extrabold">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="images/carousel 03.jpg" class="w-full" />
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide2" class="text-2xl text-white ml-10 font-extrabold">❮</a>
+            <a href="#slide4" class="text-2xl text-white mr-10 font-extrabold">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="images/carousel 04.jpg" class="w-full" />
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide3" class="text-2xl text-white ml-10 font-extrabold">❮</a>
+            <a href="#slide1" class="text-2xl text-white mr-10 font-extrabold">❯</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- demo carousel  -->
+  </header>
+
+  <main>
+    <div class="flex items-center justify-center mx-auto gap-10 -mt-2">
+      <div class="bg-primary-color w-11 h-9"></div>
+      <div class="bg-primary-color w-11 h-9"></div>
+      <div class="bg-primary-color w-11 h-9"></div>
+    </div>
+    <!-- Products section  -->
+    <section class="max-w-[1050px] mx-auto my-20">
+      <h2 class="text-xl lg:text-5xl font-extrabold mb-8 uppercase">Deals</h2>
+      <div class="grid grid-cols-2 lg:grid-cols-4 mx-3 gap-3 lg:gap-4">
+
+        <!-- first card  -->
+        <div class="card card-compact bg-base-100 rounded-lg drop-shadow-2xl">
+          <figure>
+            <img
+              src="images/Deals 01.jpg"
+              alt="Chicken" />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-black font-semibold -mt-3">Meal for Many</h2>
+            <div class="card-actions justify-end">
+              <h4 class="text-base font-semibold">$ 4.88</h4>
+            </div>
+            <div id="btn" class="card-actions justify-end">
+              <button class="bg-primary-color py-2 px-5 text-white rounded-md text-xs uppercase">Add to card</button>
+            </div>
+          </div>
+        </div>
+        <!-- second card  -->
+        <div class="card card-compact bg-base-100 rounded-lg drop-shadow-2xl">
+          <figure>
+            <img
+              src="images/Deals 02.jpg"
+              alt="Chicken" />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-black font-semibold -mt-3">KFC Big Treat</h2>
+            <div class="card-actions justify-end">
+              <h4 class="text-base font-semibold">$ 5.50</h4>
+            </div>
+            <div id="btn" class="card-actions justify-end">
+              <button class="bg-primary-color py-2 px-5 text-white rounded-md text-xs uppercase">Add to card</button>
+            </div>
+          </div>
+        </div>
+        <!-- third card  -->
+        <div class="card card-compact bg-base-100 rounded-lg drop-shadow-2xl">
+          <figure>
+            <img
+              src="images/Deals 03.jpg"
+              alt="Chicken" />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-black font-semibold -mt-3">Double Zinger</h2>
+            <div class="card-actions justify-end">
+              <h4 class="text-base font-semibold">$ 3.88</h4>
+            </div>
+            <div id="btn" class="card-actions justify-end">
+              <button class="bg-primary-color py-2 px-5 text-white rounded-md text-xs uppercase">Add to card</button>
+            </div>
+          </div>
+        </div>
+        <!-- fourth card  -->
+        <div class="card card-compact bg-base-100 rounded-lg drop-shadow-2xl">
+          <figure>
+            <img
+              src="images/Deals 04.jpg"
+              alt="Chicken" />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-black font-semibold -mt-3">Double Zinger</h2>
+            <div class="card-actions justify-end">
+              <h4 class="text-base font-semibold">$ 3.88</h4>
+            </div>
+            <div id="btn" class="card-actions justify-end">
+              <button class="bg-primary-color py-2 px-5 text-white rounded-md text-xs uppercase">Add to card</button>
+            </div>
+          </div>
+        </div>
+        <!-- fifth card  -->
+        <div class="card card-compact bg-base-100 rounded-lg drop-shadow-2xl">
+          <figure>
+            <img
+              src="images/Deals 05.jpg"
+              alt="Chicken" />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-black font-semibold -mt-3">Double Zinger</h2>
+            <div class="card-actions justify-end">
+              <h4 class="text-base font-semibold">$ 3.88</h4>
+            </div>
+            <div id="btn" class="card-actions justify-end">
+              <button class="bg-primary-color py-2 px-5 text-white rounded-md text-xs uppercase">Add to card</button>
+            </div>
+          </div>
+        </div>
+        <!-- sixth card  -->
+        <div class="card card-compact bg-base-100 rounded-lg drop-shadow-2xl">
+          <figure>
+            <img
+              src="images/Deals 06.jpg"
+              alt="Chicken" />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-black font-semibold -mt-3">Double Zinger</h2>
+            <div class="card-actions justify-end">
+              <h4 class="text-base font-semibold">$ 3.88</h4>
+            </div>
+            <div id="btn" class="card-actions justify-end">
+              <button class="bg-primary-color py-2 px-5 text-white rounded-md text-xs uppercase">Add to card</button>
+            </div>
+          </div>
+        </div>
+        <!-- seventh card  -->
+        <div class="card card-compact bg-base-100 rounded-lg drop-shadow-2xl">
+          <figure>
+            <img
+              src="images/Deals 07.jpg"
+              alt="Chicken" />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-black font-semibold -mt-3">Double Zinger</h2>
+            <div class="card-actions justify-end">
+              <h4 class="text-base font-semibold">$ 3.88</h4>
+            </div>
+            <div id="btn" class="card-actions justify-end">
+              <button class="bg-primary-color py-2 px-5 text-white rounded-md text-xs uppercase">Add to card</button>
+            </div>
+          </div>
+        </div>
+        <!-- eighth card  -->
+        <div class="card card-compact bg-base-100 rounded-lg drop-shadow-2xl">
+          <figure>
+            <img
+              src="images/Deals 08.jpg"
+              alt="Chicken" />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-black font-semibold -mt-3">Double Zinger</h2>
+            <div class="card-actions justify-end">
+              <h4 class="text-base font-semibold">$ 3.88</h4>
+            </div>
+            <div id="btn" class="card-actions justify-end">
+              <button class="bg-primary-color py-2 px-5 text-white rounded-md text-xs uppercase">Add to card</button>
+            </div>
+          </div>
+        </div>
+        <!-- nine card  -->
+        <div class="card card-compact bg-base-100 rounded-lg drop-shadow-2xl">
+          <figure>
+            <img
+              src="images/Deals 09.jpg"
+              alt="Chicken" />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-black font-semibold -mt-3">Double Zinger</h2>
+            <div class="card-actions justify-end">
+              <h4 class="text-base font-semibold">$ 3.88</h4>
+            </div>
+            <div id="btn" class="card-actions justify-end">
+              <button class="bg-primary-color py-2 px-5 text-white rounded-md text-xs uppercase">Add to card</button>
+            </div>
+          </div>
+        </div>
+        <!-- tenth card  -->
+        <div class="card card-compact bg-base-100 rounded-lg drop-shadow-2xl">
+          <figure>
+            <img
+              src="images/Deals 10.jpg"
+              alt="Chicken" />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-black font-semibold -mt-3">Double Zinger</h2>
+            <div class="card-actions justify-end">
+              <h4 class="text-base font-semibold">$ 3.88</h4>
+            </div>
+            <div id="btn" class="card-actions justify-end">
+              <button class="bg-primary-color py-2 px-5 text-white rounded-md text-xs uppercase">Add to card</button>
+            </div>
+          </div>
+        </div>
+        <!-- eleventh card  -->
+        <div class="card card-compact bg-base-100 rounded-lg drop-shadow-2xl">
+          <figure>
+            <img
+              src="images/Deals 11.jpeg"
+              alt="Chicken" />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-black font-semibold -mt-3">Double Zinger</h2>
+            <div class="card-actions justify-end">
+              <h4 class="text-base font-semibold">$ 3.88</h4>
+            </div>
+            <div id="btn" class="card-actions justify-end">
+              <button class="bg-primary-color py-2 px-5 text-white rounded-md text-xs uppercase">Add to card</button>
+            </div>
+          </div>
+        </div>
+        <!-- twelve card  -->
+        <div class="card card-compact bg-base-100 rounded-lg drop-shadow-2xl">
+          <figure>
+            <img
+              src="images/Deals 12.jpg"
+              alt="Chicken" />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-black font-semibold -mt-3">Double Zinger</h2>
+            <div class="card-actions justify-end">
+              <h4 class="text-base font-semibold">$ 3.88</h4>
+            </div>
+            <div id="btn" class="card-actions justify-end">
+              <button class="bg-primary-color py-2 px-5 text-white rounded-md text-xs uppercase">Add to card</button>
+            </div>
+          </div>
+        </div>
+        <!-- 13th card  -->
+        <div class="card card-compact bg-base-100 rounded-lg drop-shadow-2xl">
+          <figure>
+            <img
+              src="images/Deals 13.jpg"
+              alt="Chicken" />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-black font-semibold -mt-3">Double Zinger</h2>
+            <div class="card-actions justify-end">
+              <h4 class="text-base font-semibold">$ 3.88</h4>
+            </div>
+            <div id="btn" class="card-actions justify-end">
+              <button class="bg-primary-color py-2 px-5 text-white rounded-md text-xs uppercase">Add to card</button>
+            </div>
+          </div>
+        </div>
+        <!-- 14th card  -->
+        <div class="card card-compact bg-base-100 rounded-lg drop-shadow-2xl">
+          <figure>
+            <img
+              src="images/Deals 14.jpg"
+              alt="Chicken" />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-black font-semibold -mt-3">Double Zinger</h2>
+            <div class="card-actions justify-end">
+              <h4 class="text-base font-semibold">$ 3.88</h4>
+            </div>
+            <div id="btn" class="card-actions justify-end">
+              <button class="bg-primary-color py-2 px-5 text-white rounded-md text-xs uppercase">Add to card</button>
+            </div>
+          </div>
+        </div>
+        <!-- 15th card  -->
+        <div class="card card-compact bg-base-100 rounded-lg drop-shadow-2xl">
+          <figure>
+            <img
+              src="images/Deals 15.jpg"
+              alt="Chicken" />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-black font-semibold -mt-3">Double Zinger</h2>
+            <div class="card-actions justify-end">
+              <h4 class="text-base font-semibold">$ 3.88</h4>
+            </div>
+            <div id="btn" class="card-actions justify-end">
+              <button class="bg-primary-color py-2 px-5 text-white rounded-md text-xs uppercase">Add to card</button>
+            </div>
+          </div>
+        </div>
+        <!-- 16th card  -->
+        <div class="card card-compact bg-base-100 rounded-lg drop-shadow-2xl">
+          <figure>
+            <img
+              src="images/Deals 16.jpg"
+              alt="Chicken" />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-black font-semibold -mt-3">Double Zinger</h2>
+            <div class="card-actions justify-end">
+              <h4 class="text-base font-semibold">$ 3.88</h4>
+            </div>
+            <div id="btn" class="card-actions justify-end">
+              <button class="bg-primary-color py-2 px-5 text-white rounded-md text-xs uppercase">Add to card</button>
+            </div>
+          </div>
+        </div>
+        <!-- 17th card  -->
+        <div class="card card-compact bg-base-100 rounded-lg drop-shadow-2xl">
+          <figure>
+            <img
+              src="images/Deals 17.jpg"
+              alt="Chicken" />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-black font-semibold -mt-3">Double Zinger</h2>
+            <div class="card-actions justify-end">
+              <h4 class="text-base font-semibold">$ 3.88</h4>
+            </div>
+            <div id="btn" class="card-actions justify-end">
+              <button class="bg-primary-color py-2 px-5 text-white rounded-md text-xs uppercase">Add to card</button>
+            </div>
+          </div>
+        </div>
+        <!-- 18th card  -->
+        <div class="card card-compact bg-base-100 rounded-lg drop-shadow-2xl">
+          <figure>
+            <img
+              src="images/Deals 18.jpg"
+              alt="Chicken" />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-black font-semibold -mt-3">Double Zinger</h2>
+            <div class="card-actions justify-end">
+              <h4 class="text-base font-semibold">$ 3.88</h4>
+            </div>
+            <div id="btn" class="card-actions justify-end">
+              <button class="bg-primary-color py-2 px-5 text-white rounded-md text-xs uppercase">Add to card</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <!-- menu section -->
+    <section class="max-w-[1050px] mx-auto my-20">
+      <h2 class="uppercase text-2xl lg:text-5xl font-extrabold mb-10">Menu</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 h-[750px]">
+        <!-- first card  -->
+        <div class="relative ">
+          <img class="absolute rounded-lg w-80" src="images/menu bg.jpg" alt="">
+          <h2 class="uppercase text-3xl font-extrabold absolute text-white pt-2 pl-5">Chicken</h2>
+          <img class="absolute my-5  ml-16" src="images/menu 01.png" alt="">
+        </div>
+        <!-- second card  -->
+        <div class="relative">
+          <img class="absolute rounded-lg w-80" src="images/menu bg.jpg" alt="">
+          <h2 class="uppercase text-3xl font-extrabold absolute text-white pt-2 pl-5">deals</h2>
+          <img class="absolute my-4  ml-14" src="images/menu 02.png" alt="">
+        </div>
+        <!-- third card  -->
+        <div class="relative">
+          <img class="absolute rounded-lg w-80" src="images/menu bg.jpg" alt="">
+          <h2 class="uppercase text-3xl font-extrabold absolute text-white pt-2 pl-5">burgers</h2>
+          <img class="absolute my-4  ml-14" src="images/menu 03.png" alt="">
+        </div>
+        <!-- fourth card  -->
+        <div class="relative">
+          <img class="absolute rounded-lg w-80" src="images/menu bg.jpg" alt="">
+          <h2 class="uppercase text-3xl font-extrabold absolute text-white pt-2 pl-5">Snacks</h2>
+          <img class="absolute my-4  ml-14" src="images/menu 05.png" alt="">
+        </div>
+        <!-- fifth card  -->
+        <div class="relative">
+          <img class="absolute rounded-lg w-80" src="images/menu bg.jpg" alt="">
+          <h2 class="uppercase text-3xl font-extrabold absolute text-white pt-2 pl-5">Rice Bowlz</h2>
+          <img class="absolute my-4  ml-14" src="images/menu 04.png" alt="">
+        </div>
+        <!-- sixth card  -->
+        <div class="relative">
+          <img class="absolute rounded-lg w-80" src="images/menu bg.jpg" alt="">
+          <h2 class="uppercase text-3xl font-extrabold absolute text-white pt-2 pl-5">Beverages</h2>
+          <img class="absolute my-4  ml-14" src="images/menu 06.png" alt="">
+        </div>
+        <!-- seventh card  -->
+        <div class="relative">
+          <img class="absolute rounded-lg w-80" src="images/menu bg.jpg" alt="">
+          <h2 class="uppercase text-3xl font-extrabold absolute text-white pt-2 pl-5">Dips</h2>
+          <img class="absolute my-4  ml-14" src="images/menu 07.png" alt="">
+        </div>
+        <!-- eighth card  -->
+        <div class="relative">
+          <img class="absolute rounded-lg w-80" src="images/menu bg.jpg" alt="">
+          <h2 class="uppercase text-3xl font-extrabold absolute text-white pt-2 pl-5">crispy</h2>
+          <img class="absolute my-4  ml-14" src="images/menu 08.png" alt="">
+        </div>
+        <!-- nine card  -->
+        <div class="relative">
+          <img class="absolute rounded-lg w-80" src="images/menu bg.jpg" alt="">
+          <h2 class="uppercase text-3xl font-extrabold absolute text-white pt-2 pl-5">Red Chicken</h2>
+          <img class="absolute my-4  ml-14" src="images/manu 09.png" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer section  -->
+  <footer id="footer_details" class="footer text-base-content rounded mt-14 pt-4">
+    <div class="max-w-[1050px] mx-auto">
+      <nav class="flex flex-col lg:flex-row gap-8 no-underline mx-auto">
+        <a href="#" class=" no-underline uppercase text-[#101820] font-medium text-xs">About KFC</a>
+        <a href="#" class="no-underline uppercase text-[#101820] font-medium text-xs">Facebook</a>
+        <a href="#" class="no-underline uppercase text-[#101820] font-medium text-xs">Contact us</a>
+        <a href="#" class="no-underline uppercase text-[#101820] font-medium text-xs">Brand T $ C</a>
+        <a href="#" class="no-underline uppercase text-[#101820] font-medium text-xs">FAQ</a>
+        <a href="#" class="no-underline uppercase text-[#101820] font-medium text-xs">Offers T & C</a>
+        <a href="#" class="no-underline uppercase text-[#101820] font-medium text-xs">Find a Kfc</a>
+        <a href="#" class="no-underline uppercase text-[#101820] font-medium text-xs">KFC Shopner Pathshala</a>
+      </nav>
+
+      <div class="grid grid-cols-3 gap-10 my-10">
+        <div class="grid grid-cols-6 gap-3 text-start items-start justify-start text-2xl">
+          <a href=""><i class="fa-brands fa-square-facebook text-[#007bff]"></i></a>
+          <a href=""><i class="fa-brands fa-instagram text-red-500"></i></a>
+          <a href=""><i class="fa-brands fa-youtube text-red-600"></i></a>
+        </div>
+        <div class="flex gap-2">
+          <h2 class="text-sm">Developed By |</h2>
+          <img class="w-1/2" src="images/footer logo-black.png" alt="">
+        </div>
+        <div class="text-end">
+          <p class="text-xs text-[#525151]">© Copyright 2024 KFC. All Rights Reserved.</p>
+        </div>
+      </div>
+      <div class="text-center mx-auto text-xs text-[#666]">
+        <p>Food shown are for illustration purpose only. Actual product may differ from the images shown in this
+          website. <br>
+          The KFC name, logos, and related marks are trademarks of KFC, Inc.</p>
+      </div>
+      <div class="flex items-center justify-center mx-auto gap-10 -mb-16 mt-8">
+        <div class="bg-primary-color w-10 h-7"></div>
+        <div class="bg-primary-color w-10 h-7"></div>
+        <div class="bg-primary-color w-10 h-7"></div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
